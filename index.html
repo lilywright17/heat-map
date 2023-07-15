@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Heat Map</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <h1 id ="title" x=335 y=50>Monthly Global Land-Surface Temperature</h1>
+  <h3 id="description"> Temperatures 1753 - 2015 (base temperature 8.66)</h3>
+  <svg id="canvas">
+    </svg>
+
+  <svg id='legend' width="400" height="350">
+  <text x="105" y="20">Variance</text>
+  <rect x="0" y="40" width="50" height = "50" fill = "#0283b8"></rect>
+  <text x="60" y="70" >-3 or less</text>
+      <rect x="0" y="90" width="50" height = "50" fill = "#15aceb"></rect>
+  <text x="60" y="120">-1 to -3</text>
+      <rect x="0" y="140" width="50" height="50" fill="#ade9f7"></rect>
+  <text x="60" y="170">-1 to 0</text>
+      <rect x="0" y="190" width="50" height="50" fill="#ffbf75"></rect>
+        <text x="60" y="220">0 to 1</text>
+      <rect x="0" y="240" width="50" height="50" fill="#eb491c"></rect>
+        <text x="60" y="270">1 to 4</text>
+       <rect x="0" y="290" width="50" height="50" fill="#f00c0c"></rect> 
+        <text x="60" y="320">4 or greater</text>
+    </svg>
+  <div id='tooltip'>
+    </div>
+</body>
