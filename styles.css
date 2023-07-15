@@ -1,0 +1,17 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  background-color: pink;
+  text-color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#tooltip {
+  visibility: hidden;
+}
